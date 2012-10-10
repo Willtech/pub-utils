@@ -19,7 +19,20 @@
 // Both this NOTICE and the LICENCE must be included with every
 // file in any distribution.
 
+function output ($output) {
+
+	## Output the reiterated input string in the template at the point of the placeholder
+	## using htmlentities to encode unsafe characters.
+
+	$tpl = file_get_contents("output.tpl");
+	$result = preg_replace("/{reiterated}/",htmlentities($output, ENT_QUOTES),$tpl);
+	return $result;
+}
+
 ## placeholder
+$reiterated = "reiterated here";
+
+echo output ($reiterated);
 
 ?>
 
