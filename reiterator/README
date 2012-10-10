@@ -1,0 +1,14 @@
+reiterate.php - a re-numbering iterator 
+=======================================
+/pub-utils/reiterator/reiterate.php - a re-numbering iterator
+
+Utility to iterate over a file input as a string and
+replacing after $b which is before $e and  with $n++;
+
+Licence
+=======
+
+Per detail in the included LICENCE this work is licensed under the
+Creative Commons Attribution-ShareAlike 3.0 Unported License.
+To view a copy of this license, visit:
+http://creativecommons.org/licenses/by-sa/3.0/.
